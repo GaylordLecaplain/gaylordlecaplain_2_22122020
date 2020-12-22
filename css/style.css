@@ -1,0 +1,46 @@
+
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#logo img
+{
+    width: 90px;
+    height: 60px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li 
+{
+    margin-right: 30px;
+}
+nav a 
+{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: black;
+}
+ul{
+    float: right;
+}
+li{
+    display: inline;
+}
+nav 
+{
+    margin-top: 2px
+    ;
+}
+table
+{
+    border: 1px solid black;
+
+}
