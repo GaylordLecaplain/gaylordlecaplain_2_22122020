@@ -62,7 +62,8 @@ nav ul li a {
     border-radius: 1.5rem;
     cursor: pointer;
     margin-top: 13px;
-}
+  }
+
 
 nav ul li a{
 
@@ -105,3 +106,36 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.search-list
+{
+    float: left;
+}
+.filter i {
+    padding: 0.5rem;
+    color: #0065FC;
+  }
+  .searchResult {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .searchResult i {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+.searchResult i {
+    color: #0065FC;
+  }
+  .searchResultText {
+    margin: 0;
+  }
+ 
