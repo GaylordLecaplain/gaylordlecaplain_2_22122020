@@ -53,8 +53,6 @@ nav ul li a {
     align-items: center;
     margin-top: 13px;
     font-size: 18px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .filters-list {
@@ -150,4 +148,9 @@ p {
 .searchFormSubmitinputText{
     color:white;
     background-color: #0065FC;
+}
+.hosting img
+{
+  height: 90px;
+  width: 110px;
 }
