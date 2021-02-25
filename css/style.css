@@ -118,9 +118,10 @@ p {
     float: left;
 }
 .filter i {
-    padding: 2.5px;
+    padding: 10px;
     color: #0065FC;
     background-color: #efefef;
+    border-radius: 1.5rem;
   }
   .searchResult {
     display: flex;
@@ -149,8 +150,29 @@ p {
     color:white;
     background-color: #0065FC;
 }
-.hosting img
+.thumbnail img {
+  width: 250px;
+  height: 125px;
+  border-radius: 10px;
+}
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.thumbnails .thumbnail {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  border-radius: 1.5rem;
+}
+
+.thumbnails .thumbnail .description {
+  font-size: 0.9rem;
+  color: #333333;
+}
+.description i
 {
-  height: 90px;
-  width: 110px;
+  color: #0065FC;
 }
