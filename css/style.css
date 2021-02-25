@@ -155,24 +155,30 @@ p {
   height: 125px;
   border-radius: 10px;
 }
-.thumbnails {
+.thumbnails  {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
 }
 
-.thumbnails .thumbnail {
+.thumbnails .thumbnail .hostingpopular {
   padding: 1rem;
   text-align: center;
   border: 1px solid #cfcfcf;
   border-radius: 1.5rem;
 }
 
-.thumbnails .thumbnail .description {
+.thumbnails .thumbnail .description .hostingpopular
+{
   font-size: 0.9rem;
   color: #333333;
 }
 .description i
 {
   color: #0065FC;
+}
+.hostingpopular img {
+  width: 250px;
+  height: 125px;
+  border-radius: 10px;
 }
