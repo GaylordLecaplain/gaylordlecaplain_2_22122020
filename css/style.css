@@ -151,7 +151,7 @@ p {
     background-color: #0065FC;
 }
 .thumbnail img {
-  width: 250px;
+  width: 220px;
   height: 125px;
   border-radius: 10px;
 }
@@ -178,7 +178,11 @@ p {
   color: #0065FC;
 }
 .hostingpopular img {
-  width: 250px;
+  width: 220px;
   height: 125px;
   border-radius: 10px;
+}
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
 }
