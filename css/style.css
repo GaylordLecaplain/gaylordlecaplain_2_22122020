@@ -183,6 +183,5 @@ p {
   border-radius: 10px;
 }
 .footer {
-  background-color: #F2F2F2;
-  width: 100%;
+  float: center;
 }
