@@ -79,6 +79,11 @@ nav ul li a {
   margin-right: 40px;
 }
 
+ul {
+  padding: 0;
+}
+
+
 nav ul li:last-child a {
   color: blue;
   font-weight: bold;
@@ -149,11 +154,11 @@ p {
   grid-gap: 1.5rem;
 }
 
-.thumbnails .thumbnail {
+.thumbnails .thumbnail  {
   background-color: white;
 }
 
-.thumbnails .thumbnail figure {
+.thumbnails .thumbnail figure  {
   margin: 0;
 }
 
@@ -171,18 +176,64 @@ p {
   border-radius: 1.5rem;
 }
 
-.thumbnails .thumbnail .description .hostingpopular {
+.thumbnails .thumbnail .description .hostingpopular  {
   font-size: 0.9rem;
   color: #333333;
 }
 .description i {
   color: #0065fc;
 }
-.hostingpopular  img {
+.hostingpopular img {
   height: 125px;
   border-radius: 10px;
 }
-footer {
+
+
+
+
+
+.activityWrapImg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.activityWrapImg  {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  border-radius: 1.5rem;
+}
+
+.activityWrapImg {
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.activityWrapImg {
+  color:black;
+}
+@media (min-width: 1100px) {
+  .activity {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
   margin-top: 40px;
   padding-top: 40px;
   background: #f2f2f2;
@@ -193,6 +244,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   color: black;
+
 }
 
 footer h3 {
@@ -207,6 +259,10 @@ footer ul {
 
 footer li {
   line-height: 2em;
+}
+footer a {
+  color:black;
+  text-decoration: none;
 }
 
 .hosting {
@@ -227,14 +283,4 @@ footer li {
 
 .hostingpopular .thumbnails {
   display: block;
-}
-
-.activity {
-  display: grid;
-  column-gap: 2rem;
-  margin: 4rem 0;
-}
-.activityCard1 {
-  grid-row: 2/7;
-  grid-column: 1/2;
 }
