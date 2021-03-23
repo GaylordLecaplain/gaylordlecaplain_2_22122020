@@ -114,12 +114,7 @@ p {
 .search-list {
   float: left;
 }
-.filter i {
-  padding: 10px;
-  color: #0065fc;
-  background-color: #efefef;
-  border-radius: 1.5rem;
-}
+
 .searchResult {
   display: flex;
   align-items: center;
@@ -147,6 +142,12 @@ p {
   color: white;
   background-color: #0065fc;
 }
+.filter i {
+  padding: 10px;
+  color: #0065fc;
+  background-color: #efefef;
+  border-radius: 1.5rem;
+}
 
 .thumbnails {
   display: grid;
@@ -158,6 +159,7 @@ p {
   background-color: white;
   border-radius: 20px;
 }
+
 .thumbnail h3 {
   margin-left: 10px;
 }
