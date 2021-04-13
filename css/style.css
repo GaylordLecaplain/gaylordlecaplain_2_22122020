@@ -165,10 +165,10 @@ p {
   width: 90%;
   object-fit: cover;
   height: 125px;
-  border-radius: 23px;
   display: block;
-  margin: 5px;
   text-align: center; 
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .description i {
@@ -250,3 +250,157 @@ footer a {
   color:black;
   text-decoration: none;
 }
+
+.activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.activityTitle {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCard:hover {
+  transform: scale(1.01);
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+}
+
+@media (min-width: 1100px) {
+  .activity {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  }
+  .activityCard1 {
+    grid-row: 2/7;
+    grid-column: 1/2;
+  }
+  .activityCard2 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .activityCard3 {
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
+  .activityCard4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .activityCard5 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .activityCard6 {
+    grid-column: 4/5;
+    grid-row: 4/7;
+  }
+}
+@media (max-width: 1100px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 12rem 12rem;
+  }
+}
+@media (max-width: 925px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 12rem 12rem 12rem;
+  }
+}
+@media (max-width: 650px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  }
+}
+.activity
+  display: grid
+  column-gap: 2rem
+  margin: 4rem 0
+  &Title
+    grid-column: 1 / -1 
+  &Card
+    box-shadow: 0 0 20px #0000002e
+    border-radius: 1rem
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    transition-duration: .1s
+    &:hover
+      transform: scale(1.01)
+    &Wrapimg
+      position: relative
+      flex: 1
+      &Img
+        position: absolute
+        height: 100%
+        width: 100%
+        object-fit: cover
+    &Title
+      margin: 1.2rem 1.5rem
+
+@media (min-width: 1100px)
+
+
+.activity
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem
+    &Card
+      &1
+        grid-row: 2 / 7
+        grid-column: 1 / 2
+      &2
+        grid-column: 2 / 3
+        grid-row: 2 / 5
+      &3
+        grid-column: 3 / 4
+        grid-row: 2 / 7
+      &4
+        grid-column: 4 / 5
+        grid-row: 2 / 3
+      &5
+        grid-column: 2 / 3
+        grid-row: 6 / 7
+      &6
+        grid-column: 4 / 5
+        grid-row: 4 / 7
+
+@media (max-width: 1100px)
+  .activity
+    row-gap: 2rem
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto 12rem 12rem
+
+@media (max-width: 925px)
+  .activity
+    row-gap: 2rem
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto 12rem 12rem 12rem
+
+@media (max-width: 650px)
+  .activity
+    row-gap: 2rem
+    grid-template-columns: 1fr
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem
